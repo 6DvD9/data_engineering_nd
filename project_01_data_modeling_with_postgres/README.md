@@ -1,21 +1,21 @@
-Introduction:
+## Introduction:
 
 Sparkify wants to analyze the data they've been collecting on songs and user activity on their new music streaming app. The analytics team is particularly interested in understanding what songs users are listening to. 
 
 At the moment they are unable to easily query their data on user activity on the app, and on the metadata on the songs, as they are all held on a directory of JSON logs. 
 
 
-The goal:
+## The goal:
 
-The would like a Postgres database optimized for queries on song play analysis.
+They would like a Postgres database optimized for queries on song play analysis.
 
-The would want the following:
+They would want the following:
 
-1 - Database schema and ETL pipeline to be created for analysis.
-2 - Be able to test the database and ETL pipeline by running queries given, and be able to compare results with their expected results.
+1. Database schema and ETL pipeline to be created for analysis.
+2. Be able to test the database and ETL pipeline by running queries given, and be able to compare results with their expected results.
 
 
-Database & ETL pipeline:
+## Database & ETL pipeline:
 
 Using the song and log datasets, I created a star schema which includes the following:
 
