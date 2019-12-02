@@ -1,0 +1,7 @@
+Data Modelling: lesson 1 - 4
+
+Cloud Data Warehouses: lesson 5 - 7
+
+Data Lakes with Spark:
+
+Data Pipelines with Airflow:
