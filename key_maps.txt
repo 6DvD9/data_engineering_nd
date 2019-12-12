@@ -4,6 +4,6 @@ Cloud Data Warehouses: lesson 5 - 7
 							Intro to Cloud Computing and AWS: point 4 (AWS setup instructions) - provide AWS Promotional Credit.
 							"All students of the Data Engineer Nanodegree are provided with AWS credits"  
 
-Data Lakes with Spark:
+Data Lakes with Spark: lesson 8 - 11
 
 Data Pipelines with Airflow:
