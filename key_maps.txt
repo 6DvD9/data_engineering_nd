@@ -6,4 +6,4 @@ Cloud Data Warehouses: lesson 5 - 7
 
 Data Lakes with Spark: lesson 8 - 11
 
-Data Pipelines with Airflow:
+Data Pipelines with Airflow: lesson 12 - 14
