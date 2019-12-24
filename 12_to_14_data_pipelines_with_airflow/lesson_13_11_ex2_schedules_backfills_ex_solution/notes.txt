@@ -1,0 +1,7 @@
+Before you start on your first exercise, please note the following instruction.
+
+1. After you have updated the DAG, you will need to run /opt/airflow/start.sh command to start the Airflow webserver.
+
+2. Wait for the Airflow web server to be ready.
+
+3. Access the Airflow UI by clicking on the blue "Access Airflow" button
