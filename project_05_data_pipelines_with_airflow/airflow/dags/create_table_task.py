@@ -10,19 +10,19 @@ import sql_statements
 
 default_args = {
     'owner': 'ivalderrama',
-    'start_date': datetime(2019, 12, 27),
+    'start_date': datetime(2019, 12, 28),
     'email_on_retry': False,
     'retries': 3,
     'retry_delay': timedelta(minutes=5),
     'catchup': False,
-    'depends_on_past': False,
-    'schedule_interval': '@hourly'
+    'depends_on_past': False
 }
 
 dag = DAG(
     'create_table_task',
     default_args=default_args,
-    description='Drop and create tables to be loaded in redshift'
+    description='Drop and create tables to be loaded in redshift',
+    schedule_interval='@hourly'
 )
 
 start_operator = DummyOperator(task_id='begin_execution',  dag=dag)

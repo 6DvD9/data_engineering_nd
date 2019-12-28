@@ -10,19 +10,19 @@ from helpers import SqlQueries
 
 default_args = {
     'owner': 'ivalderrama',
-    'start_date': datetime(2019, 12, 27),
+    'start_date': datetime(2019, 12, 28),
     'email_on_retry': False,
     'retries': 3,
     'retry_delay': timedelta(minutes=5),
     'catchup': False,
-    'depends_on_past': False,
-    'schedule_interval': '@hourly'
+    'depends_on_past': False
 }
 
 dag = DAG(
     'etl_task',
     default_args=default_args,
-    description='Load and transform data in Redshift with Airflow'
+    description='Load and transform data in Redshift with Airflow',
+    schedule_interval='@hourly'
 )
 
 start_operator = DummyOperator(task_id='begin_execution',  dag=dag)
@@ -92,7 +92,7 @@ load_time_dimension_table = LoadDimensionOperator(
 run_quality_checks = DataQualityOperator(
     task_id='run_data_quality_checks',
     redshift_conn_id="redshift",
-    table="time",
+    table=["songplays", "users", "songs", "artists", "time"],
     dag=dag
 )
 
