@@ -1,0 +1,5 @@
+Links recommended by reviewer:
+
+1. https://blog.insightdatascience.com/airflow-101-start-automating-your-batch-workflows-with-ease-8e7d35387f94
+2. https://www.sicara.ai/blog/2019-04-08-apache-airflow-celery-workers
+3. https://medium.com/@dustinstansbury/beyond-cron-an-introduction-to-workflow-management-systems-19987afcdb5e?
